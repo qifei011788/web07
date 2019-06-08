@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>雪梨作业07</title>
+	<mata charset="uft-8"/>
+	<style type="text/css">
+		*{
+			padding: 0px;
+			margin: 0px;
+		}
+		.header{
+			background-color: #f4f4f4;
+			height: 30px;
+			border-bottom: 1px solid #ececec;
+		}
+		.header1{
+			width: 1200px;
+			margin:0 auto;
+		}
+		.header p{
+			height:30px;
+			font-size: 12px;
+			line-height: 30px;
+		}
+		.shoucang{
+			width:140px;
+			height: 30px;
+			float: left;
+			font-size: 12px;
+			line-height: 30px;
+		}
+		.qq{
+			float:left;
+			margin-left:10px;
+			height:30px;
+			font-size: 13.11px;
+			line-height: 30px;
+		}
+		.header img{
+			margin:8px 2px 0 0 ;
+			float:left;
+		}
+		.denglu{
+			float:right;
+			font-size: 12px;
+			height:30px;
+			line-height:30px;
+			padding-right:0px;
+		}
+		.denglu a{
+			text-decoration: none;
+			color:#000;
+		}
+		.nav{
+			height: 160px;
+			border-bottom: 3px solid #e00304;
+		}
+		.nav1{
+			width:1200px;
+			margin:0 auto;
+		}
+		.nav2{
+			width:1200px;
+			height:110px;
+		}
+		.logo{
+			width:183px;
+			padding-top:20px;
+		}
+		.search{
+			border:2px solid #f83838;
+			height:40px;
+			width:500px;
+			margin-left: 380px;
+			margin-top: -75px;
+		}
+		.search1{
+			color:#d4d4d4;
+			font-size:14px;
+			width:400px;
+			height:38px;
+			border:none;
+			line-height: 38px;
+			margin-left: 1px;
+		}
+		.search2{
+			font-size: 16px;
+			color:#000;
+			height:40px;
+			width:90px;
+			background-color: #f83838;
+			color: #fff;
+			border: none;
+			float: right;
+		}
+		.shopping{
+			border: 1px solid #e3e3e3;
+			width:150px;
+			height:40px;
+			float: right;
+			margin-right: 8px;
+			margin-top:-40px;
+			background:#f5f5f5 url(images/shopping.png) no-repeat 25px;
+			font-size: 14px;
+			line-height: 40px;
+			text-indent: 48px;
+
+		}
+		.pic{
+			width:495px;
+			height:33px;
+		  	margin-top:15px;
+		}
+		.pic li{
+			display: inline-block;
+			width:89px;
+			height:33px;
+			text-align:center;
+			line-height:33px;
+			margin-right: 30px;
+			border-radius:4px;
+		}
+		.nav a{
+			width:89px;
+			text-decoration: none;
+			font-size: 16px;
+			color: #000000;
+		}
+		.pic li:hover{
+			background-color:#fd0304;
+			}
+		.pic li:hover a{
+			color:#fff;
+			}
+		.banner{
+			height:652px;
+			background-color: #fbfbfb;
+		}
+		.banner1{
+			width:1200px;
+			margin:0 auto;
+		}
+		.bbb{
+			font-size: 14px;
+			line-height: 67px;
+		}
+		.bigger{
+			width:1200px;
+			height: 563px;
+			
+		}
+		.a{
+			height:43px;
+			width:215px;
+			background-color: #fff;
+			margin-bottom: 10px;
+			text-align: center;
+			line-height: 43px;
+			font-size: 16px;
+			background:#fff url(images/a.png) no-repeat 34px;
+		}
+		.b{
+			height:510px;
+			width:215px;
+			background-color: #fff;
+			float: left;
+		}
+		.b>a:hover{color: #ff4436}
+		.b a{
+			display: block;
+			text-decoration: none;
+			font-size: 14px;
+			color:#000;
+			text-indent:77px;
+			line-height: 30px;
+			padding-top: 18px;
+		}
+		.c{
+			height:563px;
+			width:973px;
+			background-color: #fff;
+			float: right;
+			margin-top: -53px;
+		}
+		.list{
+			width:220px;
+			height: 250px;
+			border:1px solid #dbdbdb;
+			list-style-type: none;
+			float: left;
+			margin-left: 17px;
+			margin-top: 17px;
+		}
+		span{
+			display: block;
+		}
+		.top{
+			text-align:center;
+			color:#a3a3a3;
+			font-size: 16px;
+		}
+		.del{
+			text-align:center;
+			font-size: 15px;
+			margin-top:3.5px;
+			color:#333;
+		}
+		.down{
+			height: 248px;
+			background-color: #2e2e2e;
+		}
+		.down1{
+			height: 150px;
+			width:1200px;
+			margin: 0 auto;
+			border-bottom: #454545 solid 1px;
+		}
+		.down2{
+			height:97px;
+			width:1200px;
+			margin: 0 auto;
+		}
+		ul{
+			list-style: none;
+
+		}
+		.qwe a{
+			display: block;
+		}
+		.qwe{
+			font-size: 14px;
+			color: #fff;
+		}
+		.qwe1{
+			margin-top:20px;
+			width:84px;
+			height:150px; 
+			float:left;
+			line-height:15px;
+		}
+		.qwe2{
+			margin-top: 20px;
+			width:84px;
+			height:150px; 
+			float:left;
+			margin-left: 190px;
+			line-height:15px;
+		}
+		.qwe3{
+			margin-top: 20px;
+			width:84px;
+			height:150px; 
+			float:left;
+			margin-right:13px;
+			margin-left: 190px;	
+			line-height:15px;	
+		}
+		.qwe1 a{
+			text-decoration: none;
+			font-size: 14px;
+			color: #fff;
+		}
+		.qwe2 a{
+			text-decoration: none;
+			font-size: 14px;
+			color: #fff;
+			
+		}
+		.qwe3 a{
+			text-decoration: none;
+			font-size: 14px;
+			color: #fff;
+		}
+		.little{
+			font-size: 16px;
+			line-height:22px;
+		}
+		.last{
+			font-size: 14px;
+			color: #a4a4a4;
+			text-align: center;
+			margin-top: 25px;
+			line-height: 10px;
+		}
+		.last a{
+			text-decoration: none;
+			font-size: 14px;
+			color: #a4a4a4;
+			text-align: center;
+			margin-top: 25px;
+			line-height: 10px;
+		}
+	</style>
+</head>
+<body>
+	<form>
+	<div class="header">
+		<div class="header1">
+			<div class="shoucang">我的收藏&nbsp;&nbsp;&nbsp;E族之家手机版</div>
+				<div class="qq" ><img src="images/qq.png" style="line-height: 30px;" />&nbsp;328203328</div>
+				<div class="denglu">扫描加入&nbsp;&nbsp;&nbsp;欢迎来到E族之家，<a href="#">请登录</a> | <a href="#">注册</a></div>
+		</div>
+	</div>
+	<div class="nav">
+		<div class="nav1">
+			<div class="nav2">
+			<div class="logo"><img src="images/logo.png" alt="logo"/></div>
+			<div class="search">
+				<input type="text" name="sousuo" value="&nbsp;&nbsp;&nbsp;&nbsp;请输入关键词!" class="search1" />
+				<input type="button" name="sousuo" value="搜索" class="search2" />
+			</div>
+			<div class="shopping">购物车(<font color="#f13a3a">0</font>)件</div>
+			</div>
+		 	<div class="pic">
+			 <ul>		
+				<li><a href="#">首页</a></li>
+				<li><a href="#">E族生活</a></li>
+				<li><a href="#">E族服务</a></li>
+				<li><a href="#">E族爱心</a></li>
+			</ul>
+			</div>
+			</div>
+			</div>
+	</div>
+	<div class="banner">
+		<div class="banner1">
+			<div class="bbb">当前位置：E族爱心>食品</div>
+			<div class="bigger">
+				<div class="a">
+					全部分类
+				</div>
+				<div class="b">
+					<a href="#">>食品</a>
+					<a href="#">>生活用品</a>
+				</div>
+				<div class="c">
+					<div>
+						<div class="right">
+			<ul>
+				<li class="list">
+					
+				<img src="images/lajiao.png"/>
+					<p>
+						<span class="top">精品辣椒100g</span>
+						<span class="del">¥ 90.00</span>
+					</p>
+				
+				</li>
+				<li class="list">
+					
+				<p class="p2"><img src="images/shuiguo.png"/>
+					<p>
+						<span class="top">特级百香果3斤</span>
+						<span class="del">¥ 90.00</span>
+					</p>
+				</p>
+				</li>
+				<li class="list">
+					
+				<p class="p3"><img src="images/beer.png"/>
+					<p>
+						<span class="top">万威啤酒500ml</span>
+						<span class="del">¥ 90.00</span>
+					</p>
+				</p>
+				</li>
+				<li class="list">
+					
+				<p class="p4"><img src="images/songzi.png"/>
+					<p>
+						<span class="top">万威啤酒500ml</span>
+						<span class="del">¥ 90.00</span>
+					</p>
+				</p>
+				</li>
+			</ul>
+			<ul>
+				<li class="list">
+					
+				<p class="p1"><img src="images/lajiao.png"/>
+					<p>
+						<span class="top">精品辣椒100g</span>
+						<span class="del">¥ 90.00</span>
+					</p>
+				</p>
+				</li>
+				<li class="list">
+					
+				<p class="p2"><img src="images/shuiguo.png"/>
+					<p>
+						<span class="top">特级百香果3斤</span>
+						<span class="del">¥ 90.00</span>
+					</p>
+				</p>
+				</li>
+				<li class="list">
+					
+				<p class="p3"><img src="images/beer.png"/>
+					<p>
+						<span class="top">万威啤酒500ml</span>
+						<span class="del">¥ 90.00</span>
+					</p>
+				</p>
+				</li>
+				<li class="list">
+					
+				<p class="p4"><img src="images/songzi.png"/>
+					<p>
+						<span class="top">万威啤酒500ml</span>
+						<span class="del">¥ 90.00</span>
+					</p>
+				</p>
+				</li>
+			</ul>
+		</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="down">
+		<div class="down1">
+			<ul class="qwe">
+				<div class="qwe1">
+				<li><div class="little">新手上路</div><br/>
+									<a href="#">售后流程</a><br/>
+									<a href="#">购物流程</a><br/>
+									<a href="#">订购方式</a>
+				</li>
+				</div>
+				<div class="qwe2">
+				<li><p class="little">配送方式</p><br/>
+				<a href="#">货到付款区域</a><br/>
+							<a href="#">配送支付查询</a><br/>
+							<a href="#">支付方式说明</a>
+				</li>
+			</div>
+			<div class="qwe2">
+				<li><p class="little">购物指南</p><br/>
+				<a href="#">常见问题</a><br/>
+				<a href="#">订购流程</a><br/>
+				<a href="#">注册新会员</a>
+				</li>
+			</div>
+			<div class="qwe2">
+				<li><p class="little">售后服务</p><br/>
+				<a href="#">退换货原则</a><br/>
+				<a href="#">售后服务保证</a><br/>
+				<a href="#">换货流程</a>
+				</li>
+			</div>
+			<div class="qwe3">
+				
+				<li><p class="little">关于我们</p><br/>
+				<a href="#">网站故障报告</a><br/>
+				<a href="#">联系我们</a><br/>
+				<a href="#">投诉与建议</a>
+				</li>
+			
+			</div>
+			</ul>
+
+		</div>
+		<div class="down2">
+			<p class="last"><a href="#">E族生活</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">居家维修保养</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#"> 住宿优惠信息</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">出行接送&nbsp;&nbsp;|&nbsp;&nbsp;E族活动</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">E族爱心</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="#">积分商城</a></p>
+				<p class="last">© 2017-2018  E族之家  版权所有，并保留所有权利。ICP备案证书号：粤ICP备17127392号</p>
+		</div>
+	</div>
+</form>
+</body>
+</html>
